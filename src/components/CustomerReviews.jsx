@@ -8,7 +8,7 @@ const CustomerReviews = () => {
       rating: 5,
       participation: "participant, Shuttle showdown",
       comment:
-        "Wow, the badminton knockouts were a real adrenaline rush! The competition was fierce, and I had some intense matches. A great experience, even if I didn't win this time.",
+        "The football tournament was such a rush! The competition was fierce, and I had some intense matches. It was a great experience, even though I didn't win this time.",
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ const CustomerReviews = () => {
       name: "Yerlie",
       rating: 5,
       participation: "most goals, Battle of boots",
-      comment: `"I've been participating in [organization name]'s tournaments for years, and they never fail to deliver an outstanding experience on and off the field."`,
+      comment: `"I've been participating in Karyakaram's tournaments for years, and they never fail to deliver an outstanding experience on and off the field."`,
     },
   ];
 
