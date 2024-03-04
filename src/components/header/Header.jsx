@@ -95,7 +95,7 @@ export default function Header() {
           Marathons
         </a> */}
         <a
-          href="https://pages.razorpay.com/bob4"
+          href="https://rzp.io/l/BOB4TOKEN"
           target="blank"
           className="px-6 py-2 border-2 rounded-2xl flex justify-between items-center"
         >
