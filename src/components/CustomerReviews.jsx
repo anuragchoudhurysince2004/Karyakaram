@@ -4,7 +4,7 @@ const CustomerReviews = () => {
   const reviews = [
     {
       id: 1,
-      name: "Rinkiya Mehara",
+      name: "Prashant Bisht",
       rating: 5,
       participation: "participant, Shuttle showdown",
       comment:
@@ -12,7 +12,7 @@ const CustomerReviews = () => {
     },
     {
       id: 2,
-      name: "Aman Shad",
+      name: "Sandeep",
       rating: 4,
       participation: "runner up, Mara2023",
       comment:
@@ -20,7 +20,7 @@ const CustomerReviews = () => {
     },
     {
       id: 3,
-      name: "Sanyam Parashar",
+      name: "Yerlie",
       rating: 5,
       participation: "most goals, Battle of boots",
       comment: `"I've been participating in [organization name]'s tournaments for years, and they never fail to deliver an outstanding experience on and off the field."`,
@@ -32,15 +32,15 @@ const CustomerReviews = () => {
       <h2 className="text-center font-teko text-4xl lg:text-7xl  font-normal lg:mb-4 mb-0">
         PEOPLE LOVES US
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-4 lg:py-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 lg:gap-4 py-4 lg:py-12">
         {reviews.map((review) => (
           <div
             key={review.id}
-            className=" bg-white border py-14 pl-14 pr-4 rounded-3xl shadow overflow-hidden"
+            className=" bg-white border py-12 lg:py-14 pl-8 mx-4 my-1 lg:my-0 lg:mx-0 lg:pl-14 pr-4 rounded-3xl shadow overflow-hidden"
           >
             <div className="flex">
               <div>
-                <div className="flex items-center mb-2">
+                <div className="flex items-center mb-0">
                   <div
                     style={{
                       // fontFamily: "Squa  da One",
@@ -63,7 +63,7 @@ const CustomerReviews = () => {
                 </div>
               </div>
               <img
-                className="w-2/5 lg:w-full object-contain"
+                className="w-2/5 lg:w-2/6 object-contain"
                 src={`assets/img/customers_review/${review.name}.png`}
                 alt="customer pics"
               />

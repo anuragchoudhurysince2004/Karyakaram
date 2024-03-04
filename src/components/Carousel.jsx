@@ -1,16 +1,10 @@
-import React from "react";
+import { React } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import images from "./index.js";
 
 const Carousel = () => {
-  const charityData = [
-    { id: 1, title: "Education for All", image: "/path/to/charity1.jpg" },
-    { id: 2, title: "Clean Water Initiative", image: "/path/to/charity2.jpg" },
-    { id: 3, title: "Healthcare Support", image: "/path/to/charity3.jpg" },
-    // Add more charity items as needed
-  ];
-
   const settings = {
     dots: true,
     infinite: true,
@@ -37,21 +31,18 @@ const Carousel = () => {
 
   return (
     <div className=" py-8">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-2 lg:px-4">
         <Slider {...settings}>
-          {charityData.map((charity) => (
+          {Object.keys(images).map((image, index) => (
             <div
-              key={charity.id}
-              className="flex justify-center items-center text-center"
+              key={index}
+              className="flex justify-center items-center text-center "
             >
               <img
-                src="https://picsum.photos/400/200"
-                alt={charity.title}
-                className="rounded-lg  object-cover w-11/12 justify-center m-auto"
+                src={images[image]}
+                alt={`Slide ${index}`}
+                className="rounded-lg  object-cover h-52 lg:size-3/5 justify-center m-auto"
               />
-              {/* <h3 className="text-xl font-semibold text-white mt-2">
-                {charity.title}
-              </h3> */}
             </div>
           ))}
         </Slider>

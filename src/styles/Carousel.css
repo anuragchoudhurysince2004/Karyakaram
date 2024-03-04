@@ -27,6 +27,9 @@ h2 {
   font-size: 2rem;
   color: #333;
 }
+.slick-dots li button {
+  color: white; /* Change the color to your desired color */
+}
 @media (max-width: 768px) {
   .charity-carousel {
     max-width: 80%;
