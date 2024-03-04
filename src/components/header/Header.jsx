@@ -68,7 +68,7 @@ export default function Header() {
               </svg>
             </a>
             <a
-              href="#login"
+              href="https://rzp.io/l/BOB4TOKEN"
               className="text-white font-normal py-2 px-4 rounded "
             >
               Participate
